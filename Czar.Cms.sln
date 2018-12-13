@@ -15,25 +15,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05.Infrastructure", "05.Inf
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06.Test", "06.Test", "{BA2D9D84-AAFF-4598-92C0-41D8BF55B1BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Czar.Cms.Models", "src\Czar.Cms.Models\Czar.Cms.Models.csproj", "{76D4A163-C4E8-4341-AFF9-99F40D2789CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Czar.Cms.Models", "src\Czar.Cms.Models\Czar.Cms.Models.csproj", "{76D4A163-C4E8-4341-AFF9-99F40D2789CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Czar.Cms.ViewModels", "src\Czar.Cms.ViewModels\Czar.Cms.ViewModels.csproj", "{DF70C011-43CB-4308-B24C-341BCF09870A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Czar.Cms.ViewModels", "src\Czar.Cms.ViewModels\Czar.Cms.ViewModels.csproj", "{DF70C011-43CB-4308-B24C-341BCF09870A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Czar.Cms.IServices", "src\Czar.Cms.IServices\Czar.Cms.IServices.csproj", "{F9FC2C73-BF4E-4ED1-B636-8F933B7D8C12}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Czar.Cms.IServices", "src\Czar.Cms.IServices\Czar.Cms.IServices.csproj", "{F9FC2C73-BF4E-4ED1-B636-8F933B7D8C12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Czar.Cms.Services", "src\Czar.Cms.Services\Czar.Cms.Services.csproj", "{64E28105-C020-4866-8FB7-41906A59A810}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Czar.Cms.Services", "src\Czar.Cms.Services\Czar.Cms.Services.csproj", "{64E28105-C020-4866-8FB7-41906A59A810}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Czar.Cms.IRepository", "src\Czar.Cms.IRepository\Czar.Cms.IRepository.csproj", "{975BFF1A-CF68-464C-8016-3509B52486D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Czar.Cms.IRepository", "src\Czar.Cms.IRepository\Czar.Cms.IRepository.csproj", "{975BFF1A-CF68-464C-8016-3509B52486D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Czar.Cms.Repository.SqlServer", "src\Czar.Cms.Repository.SqlServer\Czar.Cms.Repository.SqlServer.csproj", "{E98A7942-7DA1-46AE-B8F9-5982F820AFDD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Czar.Cms.Repository.SqlServer", "src\Czar.Cms.Repository.SqlServer\Czar.Cms.Repository.SqlServer.csproj", "{E98A7942-7DA1-46AE-B8F9-5982F820AFDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Czar.Cms.Core", "src\Czar.Cms.Core\Czar.Cms.Core.csproj", "{00F7A6DE-E58F-4FA7-AAFC-DB12364B8FF6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Czar.Cms.Core", "src\Czar.Cms.Core\Czar.Cms.Core.csproj", "{00F7A6DE-E58F-4FA7-AAFC-DB12364B8FF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Czar.Cms.Test", "src\Czar.Cms.Test\Czar.Cms.Test.csproj", "{64121DC2-49FE-40DD-B7D0-431BFC71C44B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Czar.Cms.Admin", "src\Czar.Cms.Admin\Czar.Cms.Admin.csproj", "{FF42262E-BD13-4CC1-A5E5-6121A9CA753F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Czar.Cms.Admin", "src\Czar.Cms.Admin\Czar.Cms.Admin.csproj", "{FF42262E-BD13-4CC1-A5E5-6121A9CA753F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Czar.Cms.Site", "src\Czar.Cms.Site\Czar.Cms.Site.csproj", "{3B6B8F05-1538-40B5-A938-381928A8698C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Czar.Cms.Site", "src\Czar.Cms.Site\Czar.Cms.Site.csproj", "{3B6B8F05-1538-40B5-A938-381928A8698C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Czar.Cms.Test.Xunit", "src\Czar.Cms.Test.Xunit\Czar.Cms.Test.Xunit.csproj", "{F9F26BDF-1686-4617-A98E-7CE13331E089}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,10 +69,6 @@ Global
 		{00F7A6DE-E58F-4FA7-AAFC-DB12364B8FF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00F7A6DE-E58F-4FA7-AAFC-DB12364B8FF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00F7A6DE-E58F-4FA7-AAFC-DB12364B8FF6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{64121DC2-49FE-40DD-B7D0-431BFC71C44B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{64121DC2-49FE-40DD-B7D0-431BFC71C44B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{64121DC2-49FE-40DD-B7D0-431BFC71C44B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{64121DC2-49FE-40DD-B7D0-431BFC71C44B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FF42262E-BD13-4CC1-A5E5-6121A9CA753F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FF42262E-BD13-4CC1-A5E5-6121A9CA753F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF42262E-BD13-4CC1-A5E5-6121A9CA753F}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -81,6 +77,10 @@ Global
 		{3B6B8F05-1538-40B5-A938-381928A8698C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B6B8F05-1538-40B5-A938-381928A8698C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B6B8F05-1538-40B5-A938-381928A8698C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9F26BDF-1686-4617-A98E-7CE13331E089}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9F26BDF-1686-4617-A98E-7CE13331E089}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9F26BDF-1686-4617-A98E-7CE13331E089}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9F26BDF-1686-4617-A98E-7CE13331E089}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -93,9 +93,9 @@ Global
 		{975BFF1A-CF68-464C-8016-3509B52486D7} = {4E989436-F15B-49EB-995A-12C05B5B801D}
 		{E98A7942-7DA1-46AE-B8F9-5982F820AFDD} = {4E989436-F15B-49EB-995A-12C05B5B801D}
 		{00F7A6DE-E58F-4FA7-AAFC-DB12364B8FF6} = {78297F39-9CCA-46B5-8FA8-25ABB59C0091}
-		{64121DC2-49FE-40DD-B7D0-431BFC71C44B} = {BA2D9D84-AAFF-4598-92C0-41D8BF55B1BE}
 		{FF42262E-BD13-4CC1-A5E5-6121A9CA753F} = {9CB0EC8C-8D2F-484F-AC3E-DFE497DF729D}
 		{3B6B8F05-1538-40B5-A938-381928A8698C} = {9CB0EC8C-8D2F-484F-AC3E-DFE497DF729D}
+		{F9F26BDF-1686-4617-A98E-7CE13331E089} = {BA2D9D84-AAFF-4598-92C0-41D8BF55B1BE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {801F1682-1E74-44AD-9B8A-91C2998F4B06}
