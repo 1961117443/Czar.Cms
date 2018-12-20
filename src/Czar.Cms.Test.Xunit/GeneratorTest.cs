@@ -95,6 +95,7 @@ namespace Czar.Cms.Test.Xunit
             IArticleCategoryRepository articleCategoryRepository = serviceProvider.GetService<IArticleCategoryRepository>();
             var count = await articleCategoryRepository.RecordCountAsync();
             Assert.True(2 == count);
+
         }
 
     }
