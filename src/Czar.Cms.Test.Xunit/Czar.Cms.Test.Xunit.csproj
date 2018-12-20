@@ -16,12 +16,21 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Czar.Cms.Core\Czar.Cms.Core.csproj" />
+    <ProjectReference Include="..\Czar.Cms.IRepository\Czar.Cms.IRepository.csproj" />
+    <ProjectReference Include="..\Czar.Cms.Models\Czar.Cms.Models.csproj" />
+    <ProjectReference Include="..\Czar.Cms.Repository.SqlServer\Czar.Cms.Repository.SqlServer.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="Microsoft.Extensions.DependencyInjection">
       <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.dependencyinjection\2.2.0\lib\netcoreapp2.0\Microsoft.Extensions.DependencyInjection.dll</HintPath>
     </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,5 @@
-﻿using Czar.Cms.Core.Models;
+﻿using Czar.Cms.Core.DbHelper;
+using Czar.Cms.Core.Models;
 using Czar.Cms.Core.Options;
 using Dapper;
 using System;
@@ -17,7 +18,7 @@ namespace Czar.Cms.Core.CodeGenerator
     {
         public List<DbTable> GetModelFromDatabase(CodeGenerateOption options, bool isCoveredExsited = true)
         { 
-            DatabaseType dbType = DatabaseType.SqlServer;
+            DatabaseType dbType = ConnectionFactory.GetDataBaseType(options.DbType); 
             string strGetAllTables = @"SELECT DISTINCT d.name as TableName, f.value as TableComment
 FROM      sys.syscolumns AS a LEFT OUTER JOIN
                 sys.systypes AS b ON a.xusertype = b.xusertype INNER JOIN
@@ -26,7 +27,7 @@ FROM      sys.syscolumns AS a LEFT OUTER JOIN
                 sys.extended_properties AS g ON a.id = g.major_id AND a.colid = g.minor_id LEFT OUTER JOIN
                 sys.extended_properties AS f ON d.id = f.major_id AND f.minor_id = 0";
             List<DbTable> tables = null;
-            using (var conn = new SqlConnection(options.ConnectionString))
+            using (var conn = ConnectionFactory.CreateConnection(dbType, options.ConnectionString))
             {
                 tables = conn.Query<DbTable>(strGetAllTables).ToList();
                 tables.ForEach(item =>

@@ -1,12 +1,12 @@
 ﻿// 本代码由代码生成器生成请勿随意改动
-// 生成时间  2018-12-14 00:57:06
+// 生成时间  2018-12-20 23:36:21
 using System;
 
 namespace Czar.Cms.Models
 {
 	/// <summary>
 	/// suxiangnian
-	/// 2018-12-14 00:57:06
+	/// 2018-12-20 23:36:21
 	/// 后台管理员角色
 	/// </summary>
 	public partial class ManagerRole

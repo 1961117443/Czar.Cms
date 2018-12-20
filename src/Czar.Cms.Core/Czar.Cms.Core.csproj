@@ -5,10 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="CodeTemplate\IRepositoryTemplate.txt" />
     <None Remove="CodeTemplate\ModelTemplate.txt" />
+    <None Remove="CodeTemplate\RepositoryTemplate.txt" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="CodeTemplate\IRepositoryTemplate.txt" />
     <EmbeddedResource Include="CodeTemplate\ModelTemplate.txt">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </EmbeddedResource>
@@ -16,6 +19,11 @@
 
   <ItemGroup>
     <PackageReference Include="Dapper" Version="1.50.5" />
+    <PackageReference Include="Dapper.SimpleCRUD" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="CodeTemplate\RepositoryTemplate.txt" />
   </ItemGroup>
 
   <ItemGroup>
