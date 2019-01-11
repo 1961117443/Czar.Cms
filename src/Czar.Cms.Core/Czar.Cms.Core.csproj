@@ -6,20 +6,25 @@
 
   <ItemGroup>
     <None Remove="CodeTemplate\IRepositoryTemplate.txt" />
+    <None Remove="CodeTemplate\IServicesTemplate.txt" />
     <None Remove="CodeTemplate\ModelTemplate.txt" />
     <None Remove="CodeTemplate\RepositoryTemplate.txt" />
+    <None Remove="CodeTemplate\ServiceTemplate.txt" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="CodeTemplate\IRepositoryTemplate.txt" />
+    <EmbeddedResource Include="CodeTemplate\IServicesTemplate.txt" />
     <EmbeddedResource Include="CodeTemplate\ModelTemplate.txt">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="CodeTemplate\ServiceTemplate.txt" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Dapper" Version="1.50.5" />
     <PackageReference Include="Dapper.SimpleCRUD" Version="2.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
   </ItemGroup>
 
   <ItemGroup>

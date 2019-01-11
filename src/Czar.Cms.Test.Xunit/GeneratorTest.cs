@@ -32,6 +32,8 @@ namespace Czar.Cms.Test.Xunit
                 opt.ModelsNamespace = "Czar.Cms.Models";//实体命名空间
                 opt.IRepositoryNamespace = "Czar.Cms.IRepository";//仓储接口命名空间
                 opt.RepositoryNamespace = "Czar.Cms.Repository.SqlServer";//仓储命名空间
+                opt.IServicesNamespace = "Czar.Cms.IServices";
+                opt.ServicesNamespace = "Czar.Cms.Services";
             });
             services.AddSingleton(typeof(ICodeGeneratorProvider), typeof(CodeGeneratorSqlServerProvider));
             services.Configure<DbOpion>("CzarCms", GetConfiguration().GetSection("DbOption"));

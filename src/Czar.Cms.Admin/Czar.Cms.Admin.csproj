@@ -5,9 +5,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Alexinea.Autofac.Extensions.DependencyInjection" Version="4.2.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.0" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Czar.Cms.IRepository\Czar.Cms.IRepository.csproj" />
+    <ProjectReference Include="..\Czar.Cms.Repository.SqlServer\Czar.Cms.Repository.SqlServer.csproj" />
+    <ProjectReference Include="..\Czar.Cms.Services\Czar.Cms.Services.csproj" />
+    <ProjectReference Include="..\Czar.Cms.ViewModels\Czar.Cms.ViewModels.csproj" />
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties wwwroot_4json_4navs_1json__JSONSchema="http://json.schemastore.org/2.0.0-csd.2.beta.2018-10-10.json" /></VisualStudio></ProjectExtensions>
 
 </Project>

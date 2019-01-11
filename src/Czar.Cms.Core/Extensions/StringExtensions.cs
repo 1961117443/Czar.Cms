@@ -9,7 +9,9 @@ using System.Text.RegularExpressions;
 
 namespace Czar.Cms.Core.Extensions
 {
-    /// <summary>  
+    /// <summary>
+    /// yilezhu
+    /// 2018.12.12
     /// string扩展方法
     /// </summary>
     public static class StringExtensions

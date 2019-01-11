@@ -2,6 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Alexinea.Autofac.Extensions.DependencyInjection;
+using Autofac;
+using AutoMapper;
+using Czar.Cms.Core.Options;
+using Czar.Cms.IRepository;
+using Czar.Cms.IServices;
+using Czar.Cms.Repository.SqlServer;
+using Czar.Cms.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -22,8 +30,9 @@ namespace Czar.Cms.Admin
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
+        public IServiceProvider ConfigureServices(IServiceCollection services)
         {
+            services.Configure<DbOpion>("CzarCms", Configuration.GetSection("DbOption"));
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
@@ -31,8 +40,19 @@ namespace Czar.Cms.Admin
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            //services.AddScoped<IManagerRoleService, ManagerRoleService>();
+            //services.AddScoped<IManagerRoleRepository, ManagerRoleRepository>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            //依赖注入AutoMapper中需要用到的服务，其中包括AutoMapper的配置类Profile
+            services.AddAutoMapper();
+            var builder = new ContainerBuilder();
+            builder.Populate(services);
+            builder.RegisterAssemblyTypes(typeof(ManagerRoleRepository).Assembly).Where(w => w.Name.EndsWith("Repository")).AsImplementedInterfaces();
+            builder.RegisterAssemblyTypes(typeof(ManagerRoleService).Assembly).Where(w => w.Name.EndsWith("Service")).AsImplementedInterfaces();
+
+            return new AutofacServiceProvider(builder.Build());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
