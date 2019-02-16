@@ -132,7 +132,7 @@
             data: { roleId: roleId },
             dataType: "json",
             headers: {
-                "X-CSRF-TOKEN-yilezhu": $("input[name='AntiforgeryKey_yilezhu']").val()
+                "X-CSRF-TOKEN-xiaosu": $("input[name='AntiforgeryKey_xiaosu']").val()
             },
             success: function (data) {//res为相应体,function为回调函数
                 layer.msg(data.ResultMsg, {
